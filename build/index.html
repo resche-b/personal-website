@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Resche Balaganesh</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Resche Balaganesh</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/hero.png" alt="Resche Balaganesh Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Resche Balaganesh</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resche_Balaganeh_Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/resche-balaganesh-21ba85202'">
+                <img src="assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/resche-b'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/aboutme-pic.png" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ year <br>Cloud Engineering</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Software Engineering <br>Western University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hello! I'm Resche Balaganesh, a passionate software engineer with 16 months of experience at BMO, currently in my fourth year of university. My journey in technology is fueled by a love for tackling, complex problems and exploring the vast possibilities within cloud computing and software engineering. I thrive on learning new technologies, developing innovative solutions, and collaborating with others. When I'm not immersed in code or exploring the latest tech trends, I enjoy diving into various hobbies and connecting with like-minded individuals. Let's connect and create something amazing together!</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers2">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Work Experience</h2>
+                    <div class="article-container">
+                        <article class="work-experience">
+                            <img src="./assets/bmo.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Junior Cloud Analyst at BMO</h3>
+                                <p>May 2023 - August 2024</p>
+                                <ul class="experience-details-list">
+                                    <li>Designed, implemented, and upgraded many infrastructure as code custom modules with security and operational compliance using Typescript, Terraform, and AWS CDK. Achieving USD $275,000 in annual savings</li>
+                                    <li>Enhanced and maintained GitHub AWS/Azure CI/CD workflows using AWS CDK and CDKTF which is currently in use by +20000 developers</li>
+                                    <li>Led the AF SaaS Migration project to ensure that all workflows transition to using Artifactory SaaS from OnPrem Artifactory to manage prod/non-prod artifacts</li>
+                                    <li>Led the architectural design of Artifactory SaaS, aligning cross-functional teams to ensure compliance with security and billing standards, while minimizing developer disruption and boosting operational efficiency by 50%</li>
+                                    <li>Commended by Managing Director of Cloud Services for handling 80% of triaged incidents, showcasing dedication and reducing downtime during periods of limited team availability</li>
+                                    <li>Updated existing infrastructure through CDK by adding IAM policies, decoupling architecture to reduce loss due to error (adding a FIFO SQS), and changing the configuration of the CDK to meet changing requirements</li>
+                                    <li>Wrote a script (Python) and added a step (Bash) in the internal module workflow that will show the top contributors to BMO-CDK using GitHub API calls</li>
+                                    <li>Released the new major version (7.x.x) of BMO-CDK modules by upgrading the AWS core version, fixing broken code, and tested by ensuring that all modules (80+) passed unit tests and deployed to AWS</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Skills/Certifications</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>AWS</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Azure</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Node.js</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Express</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Jira</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Confluence</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>C</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Linux</h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3><a href="https://www.credly.com/badges/ee55b2b9-d80b-49ea-809b-0f612dad2b85/public_url" target="_blank">AWS Developer Associate</a></h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3><a href="https://www.credly.com/badges/ae53b17f-758a-4bb0-a6d7-b0b27e83d3d4/public_url" target="_blank">AWS Solutions Architect Associate</a></h3>
+                                <!-- <p>Experienced</p> -->
+                            </div>
+                        </article>                                               
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/personal-website-picture.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Peronal Website <br>Deployed using AWS CDK</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/resche-b/personal-website'">Github</button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='github repo'">Live Demo</button> -->
+
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/eksProject.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Automated EKS Deployment with GitHub Actions</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/resche-b/eks-github-actions-pipeline'">Github</button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='github repo'">Live Demo</button> -->
+
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Work In Progress</h2>
+                <div class="btn-container">
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='github repo'">Github</button> -->
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='github repo'">Live Demo</button> -->
+
+                </div>
+            </div></div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:resche26@live.com">resche26@live.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/resche-balaganesh-21ba85202">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer><nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p></p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
