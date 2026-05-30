@@ -1,3 +1,4 @@
+import * as path from 'path';
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -31,7 +32,7 @@ export class PersonalWebsiteStack extends cdk.Stack {
     
     //upload code to bucket
     new s3Deploy.BucketDeployment(this, 'PersonalWebsiteDeploymnt',{
-      sources: [s3Deploy.Source.asset("./build")],
+      sources: [s3Deploy.Source.asset(path.join(__dirname, '../../website/build'))],
       destinationBucket: bucket,
       //role: deploymentRole, // Specify the IAM role with necessary permissions
     })
